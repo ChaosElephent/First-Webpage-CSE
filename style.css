@@ -1,0 +1,98 @@
+body,ul{
+	/*cancel the default margin*/
+	margin: 0px;
+	font-size: 14px;
+	/*font-family: proxima-nova, arial, sans-serif;*/
+}
+a{
+	text-decoration: none;
+}
+/*-------------Navigation Bar-------------------*/
+.topNavBar{
+	/*set up the flex box model, background
+	for the Top navigation bar*/
+	display: inline-flex;
+	background-color: yellow;
+	padding: 8px 0px;
+	width: 100%
+}
+.topNavBar li{
+	display: inline-flex;
+	vertical-align: middle;
+}
+
+.vertical{
+	flex-direction: column;
+}
+
+#ProfilePhoto img{
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.27);
+	width: 32px;
+	border-radius: 30%;
+	margin: 0px 16px 0px 24px;
+	vertical-align: middle;
+	align-items: center;
+}
+
+#ProfilePhoto{
+	align-items: center;
+}
+
+#barName{
+	font-size: 1em;
+}
+#barWords{
+	font-size: 0.8em;
+}
+
+li.mainNavBar{
+	/*vertical-align: middle;*/
+	display: flex;
+	flex: auto;
+	align-items: center;
+	justify-content: flex-end;
+	/*position: absolute;
+	right: 4px;
+	top:28px;*/
+}
+ul.navBottum li{
+	/*set the margin of 
+	up down to 0 px
+	left right to 32 px*/
+	margin: 0px 24px;
+
+}
+ul.navBottum{
+	margin-right: 24px;
+}
+
+/*------------------------------side bar-----------------------*/
+.sideBar{
+	position: fixed;
+	top: 15%;
+	right: 10%;
+	list-style-type: none;
+}
+.sideBarIcon img{
+	border-radius: 50%;
+	width: 48px;
+	margin: 8px 0px;
+	opacity: 0.5;
+}
+
+
+/*-------------------------------------------------------------*/
+/*main content*/
+.mainPart{
+	box-sizing: border-box;
+}
+.BG_Picture{
+	width: 100%;
+	z-index: 1;
+	margin: 0px 0px -4px 0px;
+}
+.text{
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+}
