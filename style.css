@@ -12,7 +12,7 @@ a{
 	/*set up the flex box model, background
 	for the Top navigation bar*/
 	display: inline-flex;
-	background-color: yellow;
+	background-color: #00bcd4;
 	padding: 8px 0px;
 	width: 100%
 }
@@ -20,30 +20,51 @@ a{
 	display: inline-flex;
 	vertical-align: middle;
 }
-
-.vertical{
-	flex-direction: column;
+ul.topNavBar > li > div, ul.topNavBar>li>ul>li>a{
+	color: white;
+	text-shadow:3px 3px 4px rgba(151,24,64,0.2);
 }
 
-#ProfilePhoto img{
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.27);
-	width: 32px;
-	border-radius: 30%;
-	margin: 0px 16px 0px 24px;
-	vertical-align: middle;
-	align-items: center;
+ul.topNavBar>li>ul>li>a{
+	font-weight: bold;
+	transition: all 0.6s ease;
 }
-
-#ProfilePhoto{
-	align-items: center;
+ul.topNavBar>li>ul>li>a:hover{
+	color: #d1d1d1;
+	text-shadow:1px 1px 2px rgba(151,24,64,0.2);
 }
 
 #barName{
-	font-size: 1em;
+	font-size: 1.2em;
+	font-weight: 600;
 }
 #barWords{
 	font-size: 0.8em;
 }
+
+.vertical{
+	flex-direction: column;
+}
+li.vertical{
+	justify-content: space-around;
+}
+
+
+#ProfilePhoto img{
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.27);
+	width: 48px;
+	border-radius: 30%;
+	margin: 0px 16px 0px 24px;
+	vertical-align: middle;
+	align-items: center;
+	transition: all 0.6s ease;
+}
+#ProfilePhoto img:hover{
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.27);
+}
+
+
+
 
 li.mainNavBar{
 	/*vertical-align: middle;*/
@@ -67,18 +88,56 @@ ul.navBottum{
 }
 
 /*------------------------------side bar-----------------------*/
-.sideBar{
+/*.sideBar{
 	position: fixed;
 	top: 15%;
 	right: 10%;
 	list-style-type: none;
 }
 .sideBarIcon img{
-	border-radius: 50%;
 	width: 48px;
 	margin: 8px 0px;
 	opacity: 0.5;
+}*/
+input{
+	margin: 0;
 }
+.sideBarIcon img{
+	width: 48px;
+	margin: 10px;
+	opacity: 0.5;
+}
+.sideBar>input{
+	opacity: 0;
+	z-index: 100;
+}
+.sideBar>input, .sideBar>a {
+	position: fixed;
+	width: 48px;
+	height: 48px;
+	top: 0;
+	right: 12%;
+}
+#sideBarButtom1, #sideBarButtom1 + a{
+	top: 15%;
+}
+#sideBarButtom2, #sideBarButtom2 + a{
+	top: 25%;
+}
+#sideBarButtom3, #sideBarButtom3 + a{
+	top: 35%;
+}
+#sideBarButtom4, #sideBarButtom4 + a{
+	top: 45%;
+}
+
+.sideBar input:checked + a >img{
+	opacity: 1;
+}
+.sideBar input:hover + a > img{
+	opacity: 0.7;
+}
+
 
 
 /*-------------------------------------------------------------*/
@@ -96,3 +155,9 @@ ul.navBottum{
 	position: absolute;
 	z-index: 2;
 }
+#firstPart{
+	transition: all 1s ease;
+}
+
+/*-Smooth transition-*/
+
