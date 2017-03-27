@@ -5,12 +5,34 @@
 	<!--force the browser to follow the latest standards to render the page-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>This is my test</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Chaos' Web Page</title>
+	<link rel="stylesheet" type="text/css" href="homeStyle.css">
 </head>
 <body>
 	<!--topNavBar-->
-	<ul class="topNavBar">
+	<ul class="topNavBar" id="top">
+		<li>
+			<a id="ProfilePhoto" href="information.htlm">
+				<img src="img/ProfilePhoto.jpg" alt="Profile Photo">
+			</a>
+		</li>
+		<li class=vertical>
+			<div id="barName">Chaos</div>
+			<div id="barWords">A university student who major in CS</div>
+		</li>
+		<li class="mainNavBar">
+			<ul class="navBottum">
+				<li><a href="homePage.html">Home</a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="travel.html">Travel</a></li>
+				<li><a href="information.html">Information</a></li>
+			</ul>
+		</li>
+	</ul>
+
+	<!--side bar-->
+ 	<div class="sideBar">
+ 		<!-- <ul class="topNavBar">
 		<li>
 			<a id="ProfilePhoto" href="information.htlm">
 				<img src="img/ProfilePhoto.jpg" alt="Profile Photo">
@@ -26,151 +48,43 @@
 				<li><a href="hobby.html">Hobby</a></li>
 				<li><a href="favorite.html">Favorite</a></li>
 				<li><a href="experience.html">Experience</a></li>
+
 			</ul>
 		</li>
-	</ul>
-	<!--side bar-->
-	<!-- <ul class="sideBar">
-		<li><a class="sideBarIcon" href="#firstPart"><img  src="img/home.png"></a></li>
-		<li><a class="sideBarIcon" href="#secondPart"><img  src="img/photo.png"></a></li>
-		<li><a class="sideBarIcon" href="#thirdPart"><img  src="img/code.png"></a></li>
-		<li><a class="sideBarIcon" href="#forthPart"><img  src="img/experience.png"></a></li>
-	</ul>
- -->
- 	<div class="sideBar">
-		<input type="radio" name="radio-set" id="sideBarButtom1" checked="checked">
-		<a class="sideBarIcon" href="#firstPart"><img  src="img/home.png"></a>
-		<input type="radio" name="radio-set" id="sideBarButtom2">
-		<a class="sideBarIcon" href="#secondPart"><img  src="img/photo.png"></a>
-		<input type="radio" name="radio-set" id="sideBarButtom3">
-		<a class="sideBarIcon" href="#thirdPart"><img  src="img/code.png"></a>
-		<input type="radio" name="radio-set" id="sideBarButtom4">
-		<a class="sideBarIcon" href="#forthPart"><img  src="img/experience.png"></a>
+	</ul> -->
+		<!-- <input type="radio" name="radio-set" id="sideBarButtom1" checked="checked"> -->
+		<a class="sideBarIcon" id="sideBarButtom1" href="#top"><img  src="img/backTop.png"></a>
+		<!-- <input type="radio" name="radio-set" id="sideBarButtom2"> -->
+		<a class="sideBarIcon" id="sideBarButtom2" href="#secondPart"><img  src="img/information.png"></a>
+		<!-- <input type="radio" name="radio-set" id="sideBarButtom3"> -->
+		<a class="sideBarIcon" id="sideBarButtom3" href="#thirdPart"><img  src="img/travel.png"></a>
+		<!-- <input type="radio" name="radio-set" id="sideBarButtom4"> -->
+		<a class="sideBarIcon" id="sideBarButtom4" href="#forthPart"><img  src="img/hobby.png"></a>
 	</div>
-
 	<!-- content begin -->
+		<div class="mainContent">
+			<div id="firstPart" class="mainParts">
+				<h1>Welcome to My First Web Page</h1>
+				<p>Hello my name is Chaos. This is my first web page. And it is structured using only CSS/HTML. In this web page I will introduce myself. </p>
 
-
-
-
-
-	<div id="firstPart" class="mainParts">
-		<img id="firstBackground" class="BG_Picture" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490963932&di=fec26f7d9b2b0b85bae93eac6baefac4&imgtype=jpg&er=1&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Ff%2F58b124b825676.jpg" >
-		<div class="text">canyouhelp me ???</div>
-
-	</div>
-	<div id="secondPart" class="mainParts">
-		<img class="BG_Picture" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490369213913&di=b0498abf5801c039fed128085007134f&imgtype=0&src=http%3A%2F%2Fp17.qhimg.com%2Fbdr%2F__%2Ft01d6dfb749c24f9677.jpg" >
-		<div class="text">canyouhelp me ???</div>
-
-	</div>
-	<div id="thirdPart" class="mainParts">
-		<img class="BG_Picture" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490373521345&di=b70d540cd108247975be838edaf21f74&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201504%2F18%2F20150418H1216_Uri8L.jpeg">
-		<div class="text">   </div>
-	</div>
-	<div id="forthPart" class="mainParts">
-		<img class="BG_Picture" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490373521344&di=28f5322c9aae47daf67d9d7d8dd0cb2c&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201204%2F22%2F20120422200759_5SV2w.jpeg">
-		<div class="text">   </div>
-	</div>
-
-
-
-	<h1>This is title</h1>
-	<ol>
-		<li>Feed car</li>
-		<li>Wash car</li>
-		<li>Grocery shopping</li>
-	</ol>
-	<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
-<p>There should be more here, but I don't know what yet.</p>
-    <p>For your first assignment, you are to create your own home page that could be
-placed on the Web.</p>
+			</div>
+			<div id="secondPart" class="mainParts">
+				<h1>Introduction</h1>
+				<p>I am a undergraduate university student major in Computer Science. And I like may major, since I can change the world through coding <br>For more information place click<a href="information.html"> HERE &gt;&gt;</a></p>
+			</div>
+			<div id="thirdPart" class="mainParts">
+				<h1>Travel</h1>
+				<p>Amount all the hobbies, travel is most enjoyable thing for me. <br>For more information place click<a href="travel.html"> HERE &gt;&gt;</a></p>
+			</div>
+			<div id="forthPart" class="mainParts">
+				<h1>Hobbies</h1>
+				<p>I love swimming and swim every week. To keep fit, I also jog every morning. Further, I also play video game for recreation. <br>For more information place click<a href="hobbies.html"> HERE &gt;&gt;</a></p>
+			</div>
+		</div>
+	<address>
+		<p>Made 27 March 2017 <br> by <strong>Chaos</strong></p>
+		<a href="http://www.xjtlu.edu.cn"><img src="img/logo.png"></a>
+	</address>
 
 </body>
 </html>
