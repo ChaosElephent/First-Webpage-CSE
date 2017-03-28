@@ -1,0 +1,148 @@
+/*FileName: informationStyle*/
+.mainParts{
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding:0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-attachment: fixed;
+}
+#informationMain{
+	background-image: url(img/informationBackground.png);
+
+}
+#hobbiesMain{
+	background-image: url(img/hobbyBackground.png);
+}
+#travelMain{
+	background-image: url(img/travelBackground.jpg);
+}
+.articalContainer{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.articalContainer>div{
+	display: inline-flex;
+	justify-content: center;
+	flex-grow: 1;
+}
+.tableContainer{
+	/*position: absolute;
+	left: 12.5%;
+	top:12%;*/
+	width: 75%;
+	margin-top: 64px;
+	padding-bottom: 64px;
+
+}
+#hobbiesMain>.headtitle,
+#travelMain>.headtitle{
+	align-self: flex-start;
+	margin: 3% 0% 2% 12.5%;
+}
+#hobbyPart1,
+#hobbyPart2,
+#hobbyPart3,
+#travelPart1,
+#travelPart2,
+#travelPart3
+{
+	width: 75%;
+	height: 50%;
+	display: inline-flex;
+	margin-bottom: 8px;
+}
+#hobbyPart3,
+#travelPart3{
+	margin-bottom: 24px;
+}
+
+/*.hobbyImg{
+	flex-grow: 6;
+}
+.hobbyText{
+	flex-grow: 4;
+}*/
+#hobbyPart1>.hobbyImg,
+#travelPart2>.travelImg,
+#hobbyPart3>.hobbyImg{
+	margin: 1em 1em 1em 0em;
+}
+#travelPart1>.travelImg,
+#hobbyPart2>.hobbyImg,
+#travelPart3>.travelImg{
+	margin: 1em 0em 1em 1em;
+}
+.hobbyText>h2,.travelText>p{
+	margin-top: 40%;
+}
+
+/*#hobbyPart1>.hobbyImg{
+	background-image: url(img/hobby1.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 10px;
+}
+#hobbyPart2>.hobbyImg{
+	background-image: url(img/hobby2.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 10px;
+}
+#hobbyPart3>.hobbyImg{
+	background-image: url(img/hobby3.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 10px;
+}
+*/
+
+.hobbyImg >img,
+.travelImg >img
+{
+	/*background-image: url(img/hobby1.jpg);*/
+	width: 100%;
+	/*height: 80%;*/
+}
+
+
+
+
+
+
+.inforTable{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+table{
+	border-collapse: collapse;
+}
+table, td, th{
+	border:4px solid #b2ebf2;
+	word-break: break-all;
+}
+
+#profile{
+	word-break: normal;
+}
+#photo{
+	width: 100%;
+}
+td,th{
+	padding: 18px;
+}
+
+/*address>a>img{
+	height: 2em;
+	padding: 1.2em;
+}*/

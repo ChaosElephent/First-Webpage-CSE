@@ -1,3 +1,7 @@
+body{
+	background-color: #dddddd;
+}
+
 body,ul{
 	/*cancel the default margin*/
 	margin: 0px;
@@ -5,7 +9,6 @@ body,ul{
 	color: white;
 	/*font-family: proxima-nova, arial, sans-serif;*/
 	text-shadow:3px 3px 4px rgba(151,24,64,0.2);
-
 }
 a{
 	text-decoration: none;
@@ -97,7 +100,7 @@ ul.navBottum li{
 
 }
 ul.navBottum{
-	margin-right: 24px;
+	padding-right: 24px;
 }
 
 /*------------------------------side bar-----------------------*/
@@ -232,13 +235,17 @@ ul.navBottum{
 	position: static;
 	height: 450px;
 }
-.mainParts>p>a:link{
+a:active{
+	color: #b2dfdb;
+}
+a:link{
 	color: #1de9b6;
 }
-.mainParts>p>a:hover{
+a:hover{
 	color: #a7ffed;
 }
-.mainParts>p>a:visited{
+
+a:visited{
 	color: #00bfa5;
 }
 
@@ -318,9 +325,9 @@ address{
 }
 address>a>img{
 	height: 3em;
-	padding: 1em;
+	padding: 1.5em;
 }
 address>p{
 	margin: 0;
-	padding: 1em;
+	padding: 1.5em;
 }
